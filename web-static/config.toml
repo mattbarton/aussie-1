@@ -1,4 +1,4 @@
 baseurl = "http://localhost"
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme = "hugo-base-theme"
+theme = "hugo-base"
