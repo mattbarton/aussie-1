@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+<!-- top-block start -->
+{{ partial "top-block.html" . }}
+<!-- top-block end -->
+
+	List of products (using summary.html view)
+	
+	<div id="main">
+
+		<p class="lead">
+			<ul id="list">
+            {{ range .Data.Pages }}
+                {{ .Render "summary"}}
+            {{ end }}
+			</ul>
+		</p>
+	</div>
+
+{{ partial "footer.html" . }}

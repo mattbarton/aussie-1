@@ -1,72 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Pages on My New Hugo Site</title>
+    <link>http://localhost:1313/page/</link>
+    <description>Recent content in Pages on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>First blog post</title>
-      <link>http://localhost:1313/blog/first-post/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/blog/first-post/</guid>
-      <description>
-
-&lt;h2 id=&#34;this-is-the-first-blog-post-from-embarkvet:f3b70d76da56e15d82042b9ef176d71f&#34;&gt;This is the first blog post from embarkvet.&lt;/h2&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;it esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>FAQ</title>
-      <link>http://localhost:1313/page/faq/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/page/faq/</guid>
-      <description>
-
-&lt;p&gt;This is the FAQ page.&lt;/p&gt;
-
-&lt;h2 id=&#34;heading-2:4a1318da06786ac52626178ca960109e&#34;&gt;Heading 2&lt;/h2&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bullet 1&lt;/li&gt;
-&lt;li&gt;Bullet 2&lt;/li&gt;
-&lt;li&gt;Bullet 3&lt;/li&gt;
-&lt;li&gt;Bullet 4&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;heading-2-1:4a1318da06786ac52626178ca960109e&#34;&gt;Heading 2&lt;/h2&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Second blog post</title>
-      <link>http://localhost:1313/blog/second-post/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/blog/second-post/</guid>
-      <description>
-
-&lt;h2 id=&#34;this-is-the-second-blog-post-from-embarkvet:e6529a5c976205dd0722ca9e46f2cd79&#34;&gt;This is the second blog post from embarkvet.&lt;/h2&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;it esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</description>
-    </item>
+    <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About</title>
@@ -123,6 +64,33 @@
     </item>
     
     <item>
+      <title>FAQ</title>
+      <link>http://localhost:1313/page/faq/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/page/faq/</guid>
+      <description>
+
+&lt;p&gt;This is the FAQ page.&lt;/p&gt;
+
+&lt;h2 id=&#34;heading-2:4a1318da06786ac52626178ca960109e&#34;&gt;Heading 2&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bullet 1&lt;/li&gt;
+&lt;li&gt;Bullet 2&lt;/li&gt;
+&lt;li&gt;Bullet 3&lt;/li&gt;
+&lt;li&gt;Bullet 4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;heading-2-1:4a1318da06786ac52626178ca960109e&#34;&gt;Heading 2&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Media</title>
       <link>http://localhost:1313/page/media/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
@@ -173,40 +141,6 @@
 &lt;h2 id=&#34;heading-2-1:18d05a63a1c8d7ed973cc51838494e41&#34;&gt;Heading 2&lt;/h2&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ancestry</title>
-      <link>http://localhost:1313/product/ancestry/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/product/ancestry/</guid>
-      <description>&lt;p&gt;This page describes the Ancestry product&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Feature 1&lt;/li&gt;
-&lt;li&gt;Feature 2&lt;/li&gt;
-&lt;li&gt;Feature 3&lt;/li&gt;
-&lt;li&gt;Feature 4&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Breed</title>
-      <link>http://localhost:1313/product/breed/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/product/breed/</guid>
-      <description>&lt;p&gt;This page describes the Breed product&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Feature 1&lt;/li&gt;
-&lt;li&gt;Feature 2&lt;/li&gt;
-&lt;li&gt;Feature 3&lt;/li&gt;
-&lt;li&gt;Feature 4&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+{{ partial "top-block.html" . }}
+
+	Page Section
+	
+	<div id="main">
+
+		<p class="lead">
+			<ul id="list">
+            {{ range .Data.Pages }}
+                {{ .Render "li"}}
+            {{ end }}
+			</ul>
+		</p>
+	</div>
+
+{{ partial "footer.html" . }}

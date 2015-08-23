@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Products on My New Hugo Site</title>
+    <link>http://localhost:1313/product/</link>
+    <description>Recent content in Products on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/product/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ancestry</title>
+      <link>http://localhost:1313/product/ancestry/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/product/ancestry/</guid>
+      <description>&lt;p&gt;This page describes the Ancestry product&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Feature 1&lt;/li&gt;
+&lt;li&gt;Feature 2&lt;/li&gt;
+&lt;li&gt;Feature 3&lt;/li&gt;
+&lt;li&gt;Feature 4&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Breed</title>
+      <link>http://localhost:1313/product/breed/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/product/breed/</guid>
+      <description>&lt;p&gt;This page describes the Breed product&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Feature 1&lt;/li&gt;
+&lt;li&gt;Feature 2&lt;/li&gt;
+&lt;li&gt;Feature 3&lt;/li&gt;
+&lt;li&gt;Feature 4&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

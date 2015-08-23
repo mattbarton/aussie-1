@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+{{ partial "top-block.html" . }}
+
+	<h2>product single page</h2>
+	
+	<div><a href="/product">See all products</a></div>
+	
+	<div id="main">
+
+		<p class="lead">
+			{{ .Content }}
+		</p>
+	</div>
+
+{{ partial "footer.html" . }}
