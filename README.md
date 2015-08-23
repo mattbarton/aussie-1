@@ -1,23 +1,24 @@
 # aussie-1
 
 Order of priority for non-functional requirements:
+
 1. Security. See http://www.infoworld.com/article/2608076/data-center/murder-in-the-amazon-cloud.html
 2. Reliability. The site should be up 99.99%
 3. Performance. The site should load as fast as possible.
 3. Scalability. The site should automatically scale to account for usage peaks, eg Black Friday or DDOS attacks.
 
 Development principles:
+
 * Automation, automation, automation will allow a (very) small team to deliver, improve, operate and maintain the site.
 
 ## Local setup
 
-Install Git and Vagrant. Configure git as usual (user.name, user.email, credential.helper)
+* Install Git. Configure git as usual (user.name, user.email, credential.helper)
+* Install Vagrant
+* Clone the repo: `git clone https://github.com/mattbarton/aussie-1.git`
+* `cd` to the root of the repo, where the Vagrantfile is. Run `vagrant up` to (download and) launch the vagrant machine, then `vagrant ssh` to open a shell on the vagrant machine and run commands on the vagrant machine.
 
-## Get the source
-
-`git clone https://github.com/mattbarton/aussie-1.git`
-
-## Running web-static
+## web-static
 
 web-static uses hugo from http://gohugo.io . To run the dev hugo server, use
 `hugo server --buildDrafts --bind="0.0.0.0"`. You should then be able to view the website
@@ -25,14 +26,14 @@ from a browser on your host machine at http://localhost:1313/ (in this case, it 
 
 Note that `hugo watch` does not work, due to running it in the vagrant environment. This is a known bug in hugo.
 
-## Vagrant
+## web-api
+
+This will hold the node.js members-only site and the web API back-end, run by node.js
+
+## Vagrant box details
 
 We are using Vagrant to provide a consistent development environment for all team members that has all the necessary tools packaged with it, and is similar to the production environment (if necessary in future, we could use the Vagrant box to spin up the prod instances on EC2, so that dev and prod would be identical).
 
-`cd` to the root of the repo, where the Vagrantfile is. Run `vagrant up` to (download and) launch the vagrant machine, then `vagrant ssh` to open a shell on the vagrant machine and run commands on the vagrant machine.
-
-
-### How we created the Vagrant box
 People generally recommend using the standard Amazon Linux AMI on EC2, which is based on RHEL/CentOS. So we'll use CentOS for the Vagrant box, and version 6.5 still since version 7 is not yet stable, ie chef/centos-6.5
 See also: http://thejackalofjavascript.com/vagrant-mean-box/
 The box is stored on Atlas as named `mbarton-at-embarkvet/aussie-box-1`
