@@ -1,5 +1,14 @@
 # aussie-1
 
+Order of priority for non-functional requirements:
+1. Security. See http://www.infoworld.com/article/2608076/data-center/murder-in-the-amazon-cloud.html
+2. Reliability. The site should be up 99.99%
+3. Performance. The site should load as fast as possible.
+3. Scalability. The site should automatically scale to account for usage peaks, eg Black Friday or DDOS attacks.
+
+Development principles:
+* Automation, automation, automation will allow a (very) small team to deliver, improve, operate and maintain the site.
+
 ## Local setup
 
 Install Git and Vagrant. Configure git as usual (user.name, user.email, credential.helper)
@@ -12,7 +21,7 @@ Install Git and Vagrant. Configure git as usual (user.name, user.email, credenti
 
 We are using Vagrant to provide a consistent development environment for all team members that has all the necessary tools packaged with it, and is similar to the production environment (if necessary in future, we could use the Vagrant box to spin up the prod instances on EC2, so that dev and prod would be identical).
 
-In the root folder of the repo, there is a Vagrantfile. `cd` to this folder and `vagrant up` to launch the vagrant machine, then `vagrant ssh` to run commands on the vagrant machine.
+`cd` to the root of the repo, where the Vagrantfile is. Run `vagrant up` to (download and) launch the vagrant machine, then `vagrant ssh` to open a shell on the vagrant machine and run commands on the vagrant machine.
 
 
 ### How we created the Vagrant box
@@ -66,4 +75,11 @@ sudo /usr/local/bin/python2.7 -m pip install --upgrade awscli
 sudo vi /etc/yum.repos.d/mongodb-org-3.0.repo     # contents from https://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat/
 sudo yum install mongodb-org
 sudo chkconfig mongod on
+sudo /etc/init.d/vboxadd setup  # since `yum update` updates the kernel, which requires updating the guest additions
+cd ~
+wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_linux_amd64.tar.gz
+tar -zxvf  hugo_0.14_linux_amd64.tar.gz
+sudo mv hugo_0.14_linux_amd64/hugo_0.14_linux_amd64 /usr/local/bin/hugo
+rm -rf hugo_0.14_linux_amd64
+rm  rm hugo_0.14_linux_amd64.tar.gz
 ```
