@@ -17,6 +17,14 @@ Install Git and Vagrant. Configure git as usual (user.name, user.email, credenti
 
 `git clone https://github.com/mattbarton/aussie-1.git`
 
+## Running web-static
+
+web-static uses hugo from http://gohugo.io . To run the dev hugo server, use
+`hugo server --buildDrafts --bind="0.0.0.0"`. You should then be able to view the website
+from a browser on your host machine at http://localhost:1313/ (in this case, it is necessary to use 0.0.0.0 instead of 127.0.0.1 or localhost for the binding, for it to be accessible from outside the VM)
+
+Note that `hugo watch` does not work, due to running it in the vagrant environment. This is a known bug in hugo.
+
 ## Vagrant
 
 We are using Vagrant to provide a consistent development environment for all team members that has all the necessary tools packaged with it, and is similar to the production environment (if necessary in future, we could use the Vagrant box to spin up the prod instances on EC2, so that dev and prod would be identical).

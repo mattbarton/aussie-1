@@ -20,9 +20,12 @@ Vagrant.configure(2) do |config|
   # config.vm.box_check_update = false
 
   # Create a forwarded port mapping which allows access to a specific port
-  # within the machine from a port on the host machine. In the example below,
-  # accessing "localhost:8080" will access port 80 on the guest machine.
-  # config.vm.network "forwarded_port", guest: 80, host: 8080
+  # within the machine from a port on the host machine. 
+  # `hugo server` uses port 1313 by default
+  config.vm.network "forwarded_port", guest: 1313, host: 1313, auto_correct: true
+  # add a couple more to use with node or other processes
+  config.vm.network "forwarded_port", guest: 8080, host: 8080, auto_correct: true
+  config.vm.network "forwarded_port", guest: 8888, host: 8888, auto_correct: true
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
