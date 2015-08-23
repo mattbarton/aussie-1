@@ -1,8 +1,12 @@
 # aussie-1
 
+## Local setup
+
+Install Git and Vagrant. Configure git as usual (user.name, user.email, credential.helper)
+
 ## Get the source
 
-`git checkout ...`
+`git clone https://github.com/mattbarton/aussie-1.git`
 
 ## Vagrant
 
@@ -13,6 +17,8 @@ In the root folder of the repo, there is a Vagrantfile. `cd` to this folder and 
 
 ### How we created the Vagrant box
 People generally recommend using the standard Amazon Linux AMI on EC2, which is based on RHEL/CentOS. So we'll use CentOS for the Vagrant box, and version 6.5 still since version 7 is not yet stable, ie chef/centos-6.5
+See also: http://thejackalofjavascript.com/vagrant-mean-box/
+The box is stored on Atlas as named `mbarton-at-embarkvet/aussie-box-1`
 
 ```
 mkdir ourbox
@@ -38,9 +44,26 @@ sudo wget https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tar.xz
 sudo xz -d Python-2.7.10.tar.xz
 sudo tar -xvf Python-2.7.10.tar
 cd Python-2.7.10
+sudo yum install readline-devel                 # needed to compile Python's readline module
 sudo ./configure
 sudo make
-sudo make altinstall
-...more to come
-
+sudo make altinstall                            # do side-by-side install of python2.7 without overwriting old python
+sudo /usr/local/bin/python2.7 -m ensurepip --upgrade
+cd ~
+sudo /usr/local/bin/python2.7 -m pip install --upgrade pip
+sudo /usr/local/bin/python2.7 -m pip install virtualenv
+# get postgres
+# change /etc/yum.repos.d/CentOS-Base.repo file as per https://wiki.postgresql.org/wiki/YUM_Installation
+sudo yum localinstall http://yum.postgresql.org/9.4/redhat/rhel-6-x86_64/pgdg-centos94-9.4-1.noarch.rpm
+sudo yum install postgresql94-server
+sudo service postgresql-9.4 initdb
+sudo chkconfig postgresql-9.4 on
+# get aws tools
+sudo /usr/local/bin/python2.7 -m pip install awsebcli
+sudo /usr/local/bin/python2.7 -m pip install awscli
+sudo /usr/local/bin/python2.7 -m pip install --upgrade awscli
+# mongo
+sudo vi /etc/yum.repos.d/mongodb-org-3.0.repo     # contents from https://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat/
+sudo yum install mongodb-org
+sudo chkconfig mongod on
 ```
