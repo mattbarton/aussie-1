@@ -17,10 +17,13 @@ Consider this best-practice but rather complicated AWS web app architecture: htt
 
 We are planning to use AWS Elastic Beanstalk to minimize the initial DevOps workload. Our initial architecture will be based more closely on the conventions associated with the Elastic Beanstalk - see http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.concepts.architecture.html and it's sibling pages.
 
-e.g. for now, we will *not* use S3 and Cloudfront for serving static resources. Instead the web servers will serve up all content, dynamic and static. This is a speed-to-market and development cost/time simplification, and can we undone when we need to benefit from the better performance / lower cost of Cloudfront / S3
+e.g. for now, we will not use S3 and Cloudfront for serving static resources. Instead the web servers will serve up all content, dynamic and static. This is a speed-to-market and development cost/time simplification, and can we undone when we need to benefit from the better performance / lower cost of Cloudfront / S3
 
 We will have a single web app tier on node.js serving up the web-app-private and the web-api which connects to the internet (via the ELB) and to the database, and no separate worker tier (see here for why we might want to split out a worker tier in future: http://www.codingthearchitecture.com/2012/07/20/when_do_you_need_a_3_tier_architecture.html )
 
+### Notes on security
+
+* Sessions: Secure session management, including careful use of HTTPS and HTTP for serving content, is critical to maintain user security and confidentiality. See https://www.owasp.org/index.php/Session_Management_Cheat_Sheet and https://stormpath.com/blog/everything-you-ever-wanted-to-know-about-node-dot-js-sessions/
 
 ## Local setup
 
@@ -42,6 +45,7 @@ from a browser on your host machine at http://localhost:1313/ (in this case, it 
 * CSS files: These may require a build compiler if we start using LESS/SASS
 * JS files: These may require compilation (if we use Coffeescript etc), uglification and minification
 * Image files: These may require optimization
+* Gzip of content
 
 TODO After the static pages get built by hugo, they are deployed into the 'public' folder of the node server by the build job
 
@@ -50,7 +54,6 @@ TODO After the static pages get built by hugo, they are deployed into the 'publi
 This will contain members-only pages and assets (JS, img, css) and restrict access to them to authorized users. To do this, it must also:
 
 * Handle user account workflow activities (login, logout, password change) (via stormpath APIs)
-* Persist user account details (outsourced to stormpath)
 * Manage active user sessions. The node.js process should be stateless, for scalability reasons, so session data should be held in encrypted signed cookies, or a fast cache like Redis or ElastiCache
 
 ## web-api
@@ -58,6 +61,12 @@ This will contain members-only pages and assets (JS, img, css) and restrict acce
 This will hold the web API back-end, served by node.js. This will provide API endpoints that can be called from the web app (potentially, both open endpoints that can be called from the web-app-public pages, and auth-only endpoints that can only be called from the web-app-private pages), and can similarly be called from any mobile apps we build later.
 
 Most of these calls will involve the web-api making calls to the database(s).
+
+Some of functions of the web-api:
+
+* Authenticate user credentials and tokens
+* Create and manage user accounts
+* Provide data for user dashboard
 
 ## Vagrant box details
 
