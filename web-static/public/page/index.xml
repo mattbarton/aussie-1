@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on My New Hugo Site</title>
-    <link>http://localhost:1313/page/</link>
+    <link>http://localhost/page/</link>
     <description>Recent content in Pages on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/page/about/</link>
+      <link>http://localhost/page/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/page/about/</guid>
+      <guid>http://localhost/page/about/</guid>
       <description>
 
 &lt;p&gt;This is the About page.&lt;/p&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>Company</title>
-      <link>http://localhost:1313/page/company/</link>
+      <link>http://localhost/page/company/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/page/company/</guid>
+      <guid>http://localhost/page/company/</guid>
       <description>
 
 &lt;p&gt;This is the Company page.&lt;/p&gt;
@@ -65,10 +65,10 @@
     
     <item>
       <title>FAQ</title>
-      <link>http://localhost:1313/page/faq/</link>
+      <link>http://localhost/page/faq/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/page/faq/</guid>
+      <guid>http://localhost/page/faq/</guid>
       <description>
 
 &lt;p&gt;This is the FAQ page.&lt;/p&gt;
@@ -92,10 +92,10 @@
     
     <item>
       <title>Media</title>
-      <link>http://localhost:1313/page/media/</link>
+      <link>http://localhost/page/media/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/page/media/</guid>
+      <guid>http://localhost/page/media/</guid>
       <description>
 
 &lt;p&gt;This is the Media page.&lt;/p&gt;
@@ -119,10 +119,10 @@
     
     <item>
       <title>Privacy</title>
-      <link>http://localhost:1313/page/privacy/</link>
+      <link>http://localhost/page/privacy/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/page/privacy/</guid>
+      <guid>http://localhost/page/privacy/</guid>
       <description>
 
 &lt;p&gt;This is the Privacy page.&lt;/p&gt;
