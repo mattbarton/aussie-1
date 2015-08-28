@@ -4,8 +4,8 @@ Create AWS account as user projectaussie@mattbarton.info
 In AWS Route 53, register projectaussie.com
 
 In AWS IAM console, create user 'aussie' with 
-access key ID: AKIAIN5L5WQVM2MM3AVA
-secret access key: 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
+access key ID: Removed
+secret access key: Removed
 
 Create Group with Admin privileges
 Add user 'aussie' to admin group
